@@ -7,20 +7,41 @@
       a {
         color: red;
       }
+      li a {
+        color: gray;
+      }
       #exec-bio {
         background-color: lightgray;
+      }
+      #exec-bio.alert {
+        background: blue;
       }
       #trav-bio {
         background-color: orange;
       }
-      .trav-box {
-        background-color: azure;
+      .alert { 
+        background-color: red !important;
       }
       .bio-box {
         border: 1px solid black;
       }
       .bio-box a {
         color: green;
+      }
+      .bio-box a {
+        color: pink;
+      }
+      .bio-box {
+        width: 75%;
+      }
+      .bio-box {
+        width: 50%;
+      }
+      .trav-box {
+        color: azure;
+      }
+      body div#exec-bio.bio-box a {
+        color: orange;
       }
     </style>
   </head>
@@ -38,7 +59,7 @@
       </li>
     </ul>
     <h2>I'm an h2</h2>
-    <div id="exec-bio" class="bio-box trav-box">
+    <div id="exec-bio" class="bio-box alert">
       <a href="https://example.com/">I'm a link</a>
     </div>
     <div class="bio-box trav-box">
@@ -47,7 +68,7 @@
     <div class="bio-box trav-box">
       <a href="https://example.com/">I'm a link</a>
     </div>
-    <div class="bio-box trav-box">
+    <div class="bio-box alert">
       <a href="https://example.com/">I'm a link</a>
     </div>
   </body>
