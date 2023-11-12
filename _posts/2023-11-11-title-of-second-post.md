@@ -1,16 +1,19 @@
 ---
 layout: post
-title: This is the title of the post
-postHero: /images/shark.jpg
-author: Me, Myself, and I
-authorTwitter: https://twitter.com/mhartl
-gravatar: https://gravatar.com/avatar/ffda7d145b83c4b118f982401f962ca6?s=150
+title: This is a post written when I'm clueless but have still made something work 
+postHero: /images/path.jpg
+author: Travis Ireland
+authorTwitter: https://twitter.com/teyerfire
+gravatar: https://gravatar.com/avatar/01ad07d47ad747a565ceae3c282e42119541f726a9c8162e792d92f62e88cb81
 postFooter: Additional information, and maybe a <a href="#">link or two</a>
 ---
 
-Call me *Ishmael*. Some years ago-*never mind how long precisely*-having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen and regulating the circulation.
+For the past hour I've been trying to change the Hero image for this post. I made an alias for the cli curl command, curl -OL, that kept giving me an error "Remote file name has no length," which I still don't quite understand. I figured out the problem but I couldn't get a .jpeg file to display on my site.
 
 <img class="pull-left" src="https://placekitten.com/g/400/200" alt="kitten">
 
-Whenever I find myself growing grim about the mouth; whenever it is a damp, drizzly November in my soul; whenever I find myself involuntarily pausing before coffin warehouses, and bringing up the rear of every funeral I meet; and especially whenever my hypos get such an upper hand of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people's hats off-then, I account it high time to get to sea as soon as I can. This is my substitute for pistol and ball.
+The last issue was that apparently changing the file type of a downloaded picture doesn't change the actual format of the picture. I eventually found a nice .jpg picture that seems to succinctly capture the spirit of the journey I'm on. Not the picture of the cat, the picture of the bridge for this post on the blog index page.
 
+Although... on the other side of this I did get my gravatar link to work which required reading some of the man pages for a CLI command and then when I couldn't understand much of it, blindly inputting the command and hoping for the best, as usual. 
+
+Taking notes makes a real difference but I still have no idea what I'm doing.
