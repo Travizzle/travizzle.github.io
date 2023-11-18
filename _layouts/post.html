@@ -32,5 +32,8 @@ layout: default
 		<footer class="post-footer">
 			{{ page.postFooter }}
 		</footer>
+		<div class="post-comment">
+			{% include comment-section.html url=page.url %}
+		</div>
 	</article>
 </div>
