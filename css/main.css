@@ -467,3 +467,19 @@ h4 {
 	margin-top: 5em;
 	padding-top: 1.5em;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 800px) {
+	html {
+		box-shadow: none;
+		padding: 0;
+	}
+	.post-aside {
+		display: none;
+	}
+}
+@media (max-width: 600px) {
+	.half-hero {
+		display: none;
+	}
+}
