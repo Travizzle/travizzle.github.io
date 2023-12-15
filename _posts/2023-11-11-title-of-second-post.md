@@ -10,7 +10,7 @@ postFooter: Additional information, and maybe a <a href="#">link or two</a>
 
 For the past hour I've been trying to change the Hero image for this post. I made an alias for the cli curl command, curl -OL, that kept giving me an error "Remote file name has no length," which I still don't quite understand. I figured out the problem but I couldn't get a .jpeg file to display on my site.
 
-<img class="pull-right" src="https://placekitten.com/g/400/200" alt="kitten">
+<img class="pull-right" src="https://picsum.photos/id/219/400/200" alt="large cat, probably a leopard">
 
 The last issue was that apparently changing the file type of a downloaded picture doesn't change the actual format of the picture. I eventually found a nice .jpg picture that seems to succinctly capture the spirit of the journey I'm on. Not the picture of the cat, the picture of the bridge for this post on the blog index page.
 
