@@ -4,7 +4,7 @@ title: The site is set up on my custom domain
 postHero: /images/chain.jpeg
 author: Travis Ireland
 authorTwitter: https://twitter.com/teyerfire
-gravatar: https://gravatar.com/avatar/01ad07d47ad747a565ceae3c282e42119541f726a9c8162e792d92f62e88cb81
+gravatar: https://gravatar.com/avatar/01ad07d47ad747a565ceae3c282e42119541f726a9c8162e792d92f62e88cb81?s=150
 postFooter: Additional information, and maybe a <a href="#">link or two</a>
 ---
 
