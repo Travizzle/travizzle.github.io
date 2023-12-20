@@ -442,6 +442,36 @@ h4 {
 	float: right;
 	margin: 2em -2% 2em 2em;
 }
+.puppy-witch-figure {
+	display: table;
+}
+.puppy-witch-drawing {
+	float: left;
+	height: 400px;
+	margin: 2em 2em 2em -2%;
+	width: 400px;
+}
+.puppy-witch-caption {
+	display: table-caption;
+	caption-side: bottom;
+	font-size: 0.8em;
+	text-align: center;
+}
+.cat-pumpkin-figure {
+	display: table;
+}
+.cat-pumpkin-drawing {
+	float: right;
+	height: 400px;
+	margin: 2em -2% 2em 2em;
+	width: 400px;
+}
+.cat-pumpkin-caption {
+	display: table-caption;
+	caption-side: bottom;
+	font-size: 0.8em;
+	text-align: center;
+}
 .post-aside {
 	background-color: rgba(0, 0, 0, 0.01);
 	float: right;
