@@ -442,6 +442,31 @@ h4 {
 	float: right;
 	margin: 2em -2% 2em 2em;
 }
+.halloween-drawings {
+	display: flex;
+}
+.halloween-drawings figure {
+	margin: 3em 2em 2em 0;
+	text-align: center;
+}
+.halloween-drawings img {
+	height: 700px;
+	width: 500px;
+}
+.snowflakes {
+	display: flex;
+	flex: 1;
+}
+.paper-snowflakes {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+.snowflakes img {
+	height: 700px;
+	margin: 3em 2em 2em 0;
+	width: 500px;
+}
 .post-aside {
 	background-color: rgba(0, 0, 0, 0.01);
 	float: right;
