@@ -573,6 +573,13 @@ h4 {
 	.post-aside {
 		display: none;
 	}
+	.halloween-drawings {
+		display: flex;
+		flex-direction: column;
+	}
+	.snowflakes {
+		flex-direction: column;
+	}
 }
 
 @media (max-width: 600px) {
