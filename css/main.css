@@ -178,13 +178,14 @@ h4 {
 }
 /* FOOTER DROPDOWN */
 .footer-nav .dropdown:hover .drop-menu {
-    bottom: 30px;
+    bottom: 1em;
     position: absolute;
 }
 .footer-nav .dropdown:hover .drop-trigger:after {
     border-color: transparent transparent #ed6e2f;
 }
 .footer-nav .drop-menu {
+    padding: 0 0 1em;
     position: absolute;
 }
 .footer-nav .drop-trigger {
@@ -200,7 +201,7 @@ h4 {
 .footer-nav .drop-menu:after {
     border: 0.6em solid;
     border-color: #fff transparent transparent;
-    bottom: -1.1em;
+    bottom: -0.1em;
     content: "";
     height: 0;
     position: absolute;
