@@ -10,7 +10,7 @@ postFooter: Additional information, and maybe a <a href="#">link or two</a>
 
 I now have this project pointing to the custom domain I purchased months ago. It's the second-most narcissistic domain name I could think of, the most narcissistic name I could think of was taken. I put comments on most of the DNS rules so that if I'm stupid enough to go screwing with them like last time then hopefully the comments will reflect the importance of the particular rule and I will be less likely to change them. I can only take the word of the tutorial as I have no knowledge of computer networking, but the sub-domain is https and that tiny shield in the search bar is supposed to indicate another level of security that isn't foolproof, but drastically increases protection. It only took me a day to figure this all out, thanks [Learn Enough to Be Dangerous](https://www.learnenough.com/custom-domains-tutorial). If I ever have to do this outside of GitHub and Cloudflare I just might be screwed.
 
-<img class="pull-left" src="https://picsum.photos/id/244/400/200" alt="probably a seagull">
+<img class="pull-left" src="https://picsum.photos/id/244/200?grayscale" alt="probably a seagull">
 
 My broken leg is healed of the fracture but now I need to do a strengthening program before going back to work. It would be nice to get rid of this limp. I may still be off of work for another month. It takes as long as it takes, I suppose. The physio is going well enough, and the past week has taught me the value of body doubling as I've found someone online to do daily physio with so I'm not just doing it twice per week. I'm getting closer and closer to being able to sit cross-legged both ways without pain, that's the only really pressing concern.
 

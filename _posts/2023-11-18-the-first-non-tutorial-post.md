@@ -10,7 +10,7 @@ postFooter: Additional information, and maybe a <a href="#">link or two</a>
 
 Now I have the blog finished. The comment section is operational and the posts look adequately styled. I still can't quite figure out how to download a picture into my project images folder using the command line.
 
-<img class="pull-left" src="https://picsum.photos/id/237/400/200" alt="black labrador dog">
+<img class="pull-left" src="https://picsum.photos/id/237/200" alt="black labrador dog">
 
 The next part of the tutorial is using mobile media queries so that the site styles change depending on what screen size the site is being viewed on. Responsive web design I think it's called. That's tomorrow's problem that I'll start after taking notes for this section of the blog chapter.
 

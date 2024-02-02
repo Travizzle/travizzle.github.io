@@ -562,11 +562,19 @@ h4 {
 }
 .pull-left {
 	float: left;
+        height: auto;
 	margin: 2em 2em 2em -2%;
+        max-height: 200px;
+        max-width: 200px;
+        width: auto;
 }
 .pull-right {
 	float: right;
+        height: auto;
 	margin: 2em -2% 2em 2em;
+        max-height: 200px;
+        max-width: 200px;
+        width: auto;
 }
 .halloween-drawings {
 	display: flex;
