@@ -39,8 +39,8 @@
             .grid_4-6 {
                 grid-column: 4 / 6;
             }
-            .grid_cols-3max {
-                grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+            .grid_cols-4max {
+                grid-template-columns: repeat(auto-fit, minmax(calc(15em - (9em/4)), 1fr));
                 grid-gap: 3em;
             }
 
@@ -104,6 +104,12 @@
                 align-self: end;
                 grid-column: 5 / 8;
             }
+            .feature_content-3 {
+                align-self: center;
+                align-content: center;
+                grid-column: 4 / 6;
+                text-align: center;
+            }
             .footer {
                 background-color: #ddd;
                 justify-items: center;
@@ -153,12 +159,19 @@
             <h2 class="options_title grid_2-8">
                 Here are Some Choices
             </h2>
-            <div class="options_content grid grid_2-8 grid_cols-3max">
+            <div class="options_content grid grid_2-8 grid_cols-4max">
                 <div>
                     <img src="/images/small/slide1.jpg" class="options_item-img">
                     <div class="options_item-title">Stuff</div>
                     <p>
                         In some high hand of lakes. Take almost any path you please, and ten to one it carries you down in a dale.
+                    </p>
+                </div>
+                <div>
+                    <img src="/images/small/slide1.jpg" class="options_item-img">
+                    <div class="options_item-title">Stuff</div>
+                    <p>
+                        Hello again, world!
                     </p>
                 </div>
                 <div>
@@ -199,6 +212,9 @@
             </div>
             <div class="feature_content feature_content-2">
                 Take almost any path you please, and ten to one it carries you down in a dale, and leaves you there by a pool in the stream. There is magic in it.
+            </div>
+            <div class="feature_content feature_content-3">
+                Hello, world!
             </div>
         </section>
 
