@@ -1,5 +1,3 @@
-<!-- https://jdvp.me/articles/Google-Forms-Jekyll-Comments -->
-
 {%- comment -%} 
 	This section is to determine whether or not chunked comment loading is enabled.
 	By default this is turned ON. If the page has enabled or disabled this feature explicitly,
@@ -130,7 +128,7 @@
 		{%- endcomment -%}
 		var loadJquery = document.createElement("script");
 		loadJquery.type = "text/javascript";
-		loadJquery.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js";
+		loadJquery.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js";
 		document.head.appendChild(loadJquery);
 		{%- endunless -%}
 
@@ -147,7 +145,7 @@
 		/* Load Validator (to ensure we don't run code from comments for example) */
     	{%- endcomment -%}
 		var loadValidator = document.createElement("script");
-		loadValidator.src = "https://cdnjs.cloudflare.com/ajax/libs/validator/13.9.0/validator.min.js";
+		loadValidator.src = "https://cdnjs.cloudflare.com/ajax/libs/validator/13.12.0/validator.min.js";
 		document.head.appendChild(loadValidator);
 
 		{%- comment -%}
@@ -175,7 +173,7 @@
 					/* Load JQuery CSV (need regular JQuery first) */
 					{%- endcomment -%}
 					var loadJqueryCsv = document.createElement("script");
-					loadJqueryCsv.src = "https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.min.js";
+					loadJqueryCsv.src = "https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.40/jquery.csv.min.js";
 					document.head.appendChild(loadJqueryCsv);
 
 					{%- comment -%}
@@ -679,7 +677,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 .comment-item {
 	position: relative;
-	padding: 0.5em 0.5em;
+	padding: 0.5em 2.5em;
 	background: white;
 	font-family: "Source Sans Pro", sans-serif;
 	width: 95%;
