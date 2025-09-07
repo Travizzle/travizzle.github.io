@@ -30,7 +30,9 @@ layout: default
 			{{ page.postFooter }}
 		</footer>
 		<div class="post-comment">
-                    {% include comment-section.html url=page.url %}
+{% comment %}
+                        {% include comment-section.html url=page.url %}
+{% endcomment %}
 		</div>
 	</article>
 </div>
