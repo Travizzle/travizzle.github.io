@@ -1,13 +1,100 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+        <head>
+        
+            <title>Test Page: Don't Panic</title>
+            <meta property="og:title" content="Test Page: Don't Panic">
+        
+        
+            <meta property="og:description" content="This is a dangerous site">
+        
+        <link href="/favicon.png" rel="icon">
+        <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/fonts/fontawesome-free-6.5.1-web/css/all.min.css">
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/main.css">
 
-<div class="home">
+        <script src="/js/gallery.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                activateGallery();
+            });
+        </script>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-E9WMW1WDVE"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-E9WMW1WDVE');
+	</script>
+
+    </head>
+
+
+    <body>
+        <header class="header">
+    <nav>
+        <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+        <label for="mobile-menu" class="show-mobile-menu">Menu</label>
+        <ul class="header-nav nav-links">
+            <li><a href="/">Home</a></li>
+<li><a href="/gallery">Gallery</a></li>
+<li class="dropdown">
+    <a class="drop-trigger" href="/blog">Blog</a>
+    <ul class="drop-menu">
+        <li>Recent Posts</li>
+        
+            <li><a href="/2024/04/20/inconsistent-posting.html">Consistency is the hardest part, but then it's essential</a></li>
+        
+            <li><a href="/2023/12/19/drawing-and-art.html">My attempts at art and making an independent blog entry</a></li>
+        
+            <li><a href="/2023/12/10/new-interest-or-new-distraction.html">I remember why I quit electronics the first time</a></li>
+        
+            <li><a href="/2023/12/02/finished-custom-domain.html">The site is set up on my custom domain</a></li>
+        
+            <li><a href="/2023/11/18/the-first-non-tutorial-post.html">Now the blog is finished</a></li>
+        
+    </ul>
+</li>
+<li><a href="/2024/04/20/inconsistent-posting.html">Newest Post</a></li>
+
+        </ul>
+    </nav>
+    <a href="/" class="header-logo">
+        <img src="/images/logo.png" alt="Learn Enough">
+    </a>
+</header>
+
+
+        <div class="content-container">
+            <div class="home">
     <div class="full-hero hero-home">
         <div class="hero-content">
             <h1>CODE DANGEROUSLY</h1>
             <ul class="social-list social-list-hero">
-                {% include social-links.html %}
+                <li> 
+    <a href="https://facebook.com/learnenough" class="social-link">
+        <i class="fab fa-facebook"></i>
+    </a>
+</li>
+<li>
+    <a href="https://twitter.com/learnenough" class="social-link">
+        <i class="fab fa-twitter"></i>
+    </a>
+</li>
+<li>
+    <a href="https://github.com/learnenough" class="social-link">
+        <i class="fab fa-github"></i>
+    </a>
+</li>
+
             </ul>
         </div>
     </div>
@@ -33,20 +120,21 @@ layout: default
 	    <div class="blog-posts">
 		    <header class="post-header">
 			<h2>
-				<a href="{{ site.posts.first.url }}">
-				{{ site.posts.first.title }}</a>
+				<a href="/2024/04/20/inconsistent-posting.html">
+				Consistency is the hardest part, but then it's essential</a>
 			</h2>
 			<div class="post-byline">
-				<img src="{{ site.posts.first.gravatar }}">
-                                <a href="{{ post.authorTwitter }}" class="social-link">
+				<img src="https://gravatar.com/avatar/01ad07d47ad747a565ceae3c282e42119541f726a9c8162e792d92f62e88cb81?s=150">
+                                <a href="" class="social-link">
                                     <i class="fab fa-twitter"></i>
                                 </a>
-				by: {{ site.posts.first.author }}
-				<span> - {{ site.posts.first.date | date: '%B %d, %Y' }}</span>
+				by: Travis Ireland
+				<span> - April 20, 2024</span>
 			</div>
 		</header>
-		<div class="posts-image" style="background-image:url({{ site.posts.first.postHero }})"></div>
-		{{ site.posts.first.excerpt }}
+		<div class="posts-image" style="background-image:url(/images/brightcap.jpg)"></div>
+		<p>At this point it’s not surprising that I’ve spent the last 2 hours trying to download an image for this post using the command line, unsuccessfully. I just don’t get what is going wrong. I need to get that off my chest, and hope that this time serves to teach me that next time I should just download an image via the website instead of the command line. Use the tools available to you that you know how to use. So with my most recent instance of computer-related incompetence out of the way I can talk about what’s been happening over the past few, or five or six months since I last posted.</p>
+
 	</div>
 </div>
 
@@ -99,3 +187,59 @@ layout: default
         </div>
     </div>
 </div>
+
+        </div>
+
+        <footer class="footer">
+    <a href="/" class="footer-logo">
+        <img src="/images/logo.png" alt="Learn Enough">
+    </a>
+    <nav>
+        <ul class="footer-nav nav-links">
+            <li><a href="/">Home</a></li>
+<li><a href="/gallery">Gallery</a></li>
+<li class="dropdown">
+    <a class="drop-trigger" href="/blog">Blog</a>
+    <ul class="drop-menu">
+        <li>Recent Posts</li>
+        
+            <li><a href="/2024/04/20/inconsistent-posting.html">Consistency is the hardest part, but then it's essential</a></li>
+        
+            <li><a href="/2023/12/19/drawing-and-art.html">My attempts at art and making an independent blog entry</a></li>
+        
+            <li><a href="/2023/12/10/new-interest-or-new-distraction.html">I remember why I quit electronics the first time</a></li>
+        
+            <li><a href="/2023/12/02/finished-custom-domain.html">The site is set up on my custom domain</a></li>
+        
+            <li><a href="/2023/11/18/the-first-non-tutorial-post.html">Now the blog is finished</a></li>
+        
+    </ul>
+</li>
+<li><a href="/2024/04/20/inconsistent-posting.html">Newest Post</a></li>
+
+        </ul>
+    </nav>
+    <ul class="social-list social-list-footer">
+        <li> 
+    <a href="https://facebook.com/learnenough" class="social-link">
+        <i class="fab fa-facebook"></i>
+    </a>
+</li>
+<li>
+    <a href="https://twitter.com/learnenough" class="social-link">
+        <i class="fab fa-twitter"></i>
+    </a>
+</li>
+<li>
+    <a href="https://github.com/learnenough" class="social-link">
+        <i class="fab fa-github"></i>
+    </a>
+</li>
+
+    </ul>
+    <h3>Learn Enough <span>to Be Dangerous</span></h3>
+</footer>
+
+    </body>
+</html>
+

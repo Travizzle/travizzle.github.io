@@ -1,36 +1,301 @@
----
-layout: default
-title: Dangerous Blog
-description: A dangerous site deserves a dangerous blog.
----
+<!DOCTYPE html>
+<html>
+        <head>
+        
+            <title>Dangerous Blog | Test Page</title>
+            <meta property="og:title" content="Dangerous Blog | Test Page">
+        
+        
+            <meta property="og:description" content="A dangerous site deserves a dangerous blog.">
+        
+        <link href="/favicon.png" rel="icon">
+        <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/fonts/fontawesome-free-6.5.1-web/css/all.min.css">
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/main.css">
 
-<div class="page blog-index">
+        <script src="/js/gallery.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                activateGallery();
+            });
+        </script>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-E9WMW1WDVE"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-E9WMW1WDVE');
+	</script>
+
+    </head>
+
+
+    <body>
+        <header class="header">
+    <nav>
+        <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+        <label for="mobile-menu" class="show-mobile-menu">Menu</label>
+        <ul class="header-nav nav-links">
+            <li><a href="/">Home</a></li>
+<li><a href="/gallery">Gallery</a></li>
+<li class="dropdown">
+    <a class="drop-trigger" href="/blog">Blog</a>
+    <ul class="drop-menu">
+        <li>Recent Posts</li>
+        
+            <li><a href="/2024/04/20/inconsistent-posting.html">Consistency is the hardest part, but then it's essential</a></li>
+        
+            <li><a href="/2023/12/19/drawing-and-art.html">My attempts at art and making an independent blog entry</a></li>
+        
+            <li><a href="/2023/12/10/new-interest-or-new-distraction.html">I remember why I quit electronics the first time</a></li>
+        
+            <li><a href="/2023/12/02/finished-custom-domain.html">The site is set up on my custom domain</a></li>
+        
+            <li><a href="/2023/11/18/the-first-non-tutorial-post.html">Now the blog is finished</a></li>
+        
+    </ul>
+</li>
+<li><a href="/2024/04/20/inconsistent-posting.html">Newest Post</a></li>
+
+        </ul>
+    </nav>
+    <a href="/" class="header-logo">
+        <img src="/images/logo.png" alt="Learn Enough">
+    </a>
+</header>
+
+
+        <div class="content-container">
+            <div class="page blog-index">
     <h1>Bloggie Blog</h1>
     <div class="col-two blog-cols">
         <div class="col col-aside blog-recent">
             <h4>Recent Posts</h4>
             <ul class="blog-title-list">
-		    {% include recent-post.html %}
+		    
+	<li>
+		<a href="/2024/04/20/inconsistent-posting.html">Consistency is the hardest part, but then it's essential</a>
+		<span>Posted: April 20, 2024<br>
+		by: Travis Ireland</span>
+		<img src="https://gravatar.com/avatar/01ad07d47ad747a565ceae3c282e42119541f726a9c8162e792d92f62e88cb81?s=150">
+	</li>
+
+	<li>
+		<a href="/2023/12/19/drawing-and-art.html">My attempts at art and making an independent blog entry</a>
+		<span>Posted: December 19, 2023<br>
+		by: Travis Ireland</span>
+		<img src="https://gravatar.com/avatar/01ad07d47ad747a565ceae3c282e42119541f726a9c8162e792d92f62e88cb81?s=150">
+	</li>
+
+	<li>
+		<a href="/2023/12/10/new-interest-or-new-distraction.html">I remember why I quit electronics the first time</a>
+		<span>Posted: December 10, 2023<br>
+		by: Travis Ireland</span>
+		<img src="https://gravatar.com/avatar/01ad07d47ad747a565ceae3c282e42119541f726a9c8162e792d92f62e88cb81?s=150">
+	</li>
+
+	<li>
+		<a href="/2023/12/02/finished-custom-domain.html">The site is set up on my custom domain</a>
+		<span>Posted: December 02, 2023<br>
+		by: Travis Ireland</span>
+		<img src="https://gravatar.com/avatar/01ad07d47ad747a565ceae3c282e42119541f726a9c8162e792d92f62e88cb81?s=150">
+	</li>
+
+	<li>
+		<a href="/2023/11/18/the-first-non-tutorial-post.html">Now the blog is finished</a>
+		<span>Posted: November 18, 2023<br>
+		by: Travis Ireland</span>
+		<img src="https://gravatar.com/avatar/01ad07d47ad747a565ceae3c282e42119541f726a9c8162e792d92f62e88cb81?s=150">
+	</li>
+
+
             </ul>
         </div>
         <div class="col col-content blog-previews">
-            {% for post in site.posts %}
+            
                 <div class="blog-posts">
                     <header class="post-header">
-                        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                        <h2><a href="/2024/04/20/inconsistent-posting.html">Consistency is the hardest part, but then it's essential</a></h2>
                         <div class="post-byline">
-                            <img src="{{ post.gravatar }}" />
-                            <a href="{{ post.authorTwitter }}" class="social-link">
+                            <img src="https://gravatar.com/avatar/01ad07d47ad747a565ceae3c282e42119541f726a9c8162e792d92f62e88cb81?s=150" />
+                            <a href="https://twitter.com/teyerfire" class="social-link">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            by: {{ post.author }}
-                            <span> - {{ post.date | date: '%B %d, %Y' }}</span>
+                            by: Travis Ireland
+                            <span> - April 20, 2024</span>
                         </div>
                     </header>
-                    <div class="posts-image" style="background-image:url({{ post.postHero }})"></div>
-                    {{ post.excerpt }}
+                    <div class="posts-image" style="background-image:url(/images/brightcap.jpg)"></div>
+                    <p>At this point it’s not surprising that I’ve spent the last 2 hours trying to download an image for this post using the command line, unsuccessfully. I just don’t get what is going wrong. I need to get that off my chest, and hope that this time serves to teach me that next time I should just download an image via the website instead of the command line. Use the tools available to you that you know how to use. So with my most recent instance of computer-related incompetence out of the way I can talk about what’s been happening over the past few, or five or six months since I last posted.</p>
+
                 </div>
-            {% endfor %}
+            
+                <div class="blog-posts">
+                    <header class="post-header">
+                        <h2><a href="/2023/12/19/drawing-and-art.html">My attempts at art and making an independent blog entry</a></h2>
+                        <div class="post-byline">
+                            <img src="https://gravatar.com/avatar/01ad07d47ad747a565ceae3c282e42119541f726a9c8162e792d92f62e88cb81?s=150" />
+                            <a href="https://twitter.com/teyerfire" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            by: Travis Ireland
+                            <span> - December 19, 2023</span>
+                        </div>
+                    </header>
+                    <div class="posts-image" style="background-image:url(/images/art/snowflake-1.jpg)"></div>
+                    <p>This is an entry about my last several attempts at art which I do not engage in regularly and likely wouldn’t engage in if it wasn’t in a group setting. It is also an attempt to take pictures with my tablet and transfer the files to my computer and use those images on my site instead of the free images on <a href="https://pixabay.com">Pixabay</a>… which may actually qualify as an art form in and of itself.</p>
+
+                </div>
+            
+                <div class="blog-posts">
+                    <header class="post-header">
+                        <h2><a href="/2023/12/10/new-interest-or-new-distraction.html">I remember why I quit electronics the first time</a></h2>
+                        <div class="post-byline">
+                            <img src="https://gravatar.com/avatar/01ad07d47ad747a565ceae3c282e42119541f726a9c8162e792d92f62e88cb81?s=150" />
+                            <a href="https://twitter.com/teyerfire" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            by: Travis Ireland
+                            <span> - December 10, 2023</span>
+                        </div>
+                    </header>
+                    <div class="posts-image" style="background-image:url(/images/wiimote.png)"></div>
+                    <p>In 2020 I encountered persistent lower back pain that I had to go to a physical therapist to remedy to no avail. Going to physio resulted in getting some exercises that would help for about 20 minutes before the pain came back. It turned out to be a $10 pair of slippers that had zero arch support that I wore around the house long enough for the pain to develop. The pain ended within a day of not wearing the slippers, but that experience of a couple of weeks being centered around pain management altered my life. Before the pain ended I had browsed many fitness-based websites with the hope that I would find some set of exercises that would alleviate the pain for longer than 20 minutes. I didn’t, but I found <a href="https://www.nerdfitness.com">Nerd Fitness</a> and as the days went by I came to appreciate how much they simplified the idea of incorporating fitness and nutrition into life. When I stopped wearing the slippers and the pain ended I was set on living a healthier life, if only to prolong the amount of time I live without pain.</p>
+
+                </div>
+            
+                <div class="blog-posts">
+                    <header class="post-header">
+                        <h2><a href="/2023/12/02/finished-custom-domain.html">The site is set up on my custom domain</a></h2>
+                        <div class="post-byline">
+                            <img src="https://gravatar.com/avatar/01ad07d47ad747a565ceae3c282e42119541f726a9c8162e792d92f62e88cb81?s=150" />
+                            <a href="https://twitter.com/teyerfire" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            by: Travis Ireland
+                            <span> - December 02, 2023</span>
+                        </div>
+                    </header>
+                    <div class="posts-image" style="background-image:url(/images/chain.jpeg)"></div>
+                    <p>I now have this project pointing to the custom domain I purchased months ago. It’s the second-most narcissistic domain name I could think of, the most narcissistic name I could think of was taken. I put comments on most of the DNS rules so that if I’m stupid enough to go screwing with them like last time then hopefully the comments will reflect the importance of the particular rule and I will be less likely to change them. I can only take the word of the tutorial as I have no knowledge of computer networking, but the sub-domain is https and that tiny shield in the search bar is supposed to indicate another level of security that isn’t foolproof, but drastically increases protection. It only took me a day to figure this all out, thanks <a href="https://www.learnenough.com/custom-domains-tutorial">Learn Enough to Be Dangerous</a>. If I ever have to do this outside of GitHub and Cloudflare I just might be screwed.</p>
+
+                </div>
+            
+                <div class="blog-posts">
+                    <header class="post-header">
+                        <h2><a href="/2023/11/18/the-first-non-tutorial-post.html">Now the blog is finished</a></h2>
+                        <div class="post-byline">
+                            <img src="https://gravatar.com/avatar/01ad07d47ad747a565ceae3c282e42119541f726a9c8162e792d92f62e88cb81?s=150" />
+                            <a href="https://twitter.com/teyerfire" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            by: Travis Ireland
+                            <span> - November 18, 2023</span>
+                        </div>
+                    </header>
+                    <div class="posts-image" style="background-image:url(/images/spider.jpg)"></div>
+                    <p>Now I have the blog finished. The comment section is operational and the posts look adequately styled. I still can’t quite figure out how to download a picture into my project images folder using the command line.</p>
+
+                </div>
+            
+                <div class="blog-posts">
+                    <header class="post-header">
+                        <h2><a href="/2023/11/11/title-of-second-post.html">This is a post written when I'm clueless but have still made something work</a></h2>
+                        <div class="post-byline">
+                            <img src="https://gravatar.com/avatar/01ad07d47ad747a565ceae3c282e42119541f726a9c8162e792d92f62e88cb81?s=150" />
+                            <a href="https://twitter.com/teyerfire" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            by: Travis Ireland
+                            <span> - November 11, 2023</span>
+                        </div>
+                    </header>
+                    <div class="posts-image" style="background-image:url(/images/path.jpg)"></div>
+                    <p>For the past hour I’ve been trying to change the Hero image for this post. I made an alias for the cli curl command, curl -OL, that kept giving me an error “Remote file name has no length,” which I still don’t quite understand. I figured out the problem but I couldn’t get a .jpeg file to display on my site.</p>
+
+                </div>
+            
+                <div class="blog-posts">
+                    <header class="post-header">
+                        <h2><a href="/2023/11/10/title-of-post.html">This is the title of the post</a></h2>
+                        <div class="post-byline">
+                            <img src="https://gravatar.com/avatar/ffda7d145b83c4b118f982401f962ca6?s=150" />
+                            <a href="https://twitter.com/mhartl" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            by: Me, Myself, and I
+                            <span> - November 10, 2023</span>
+                        </div>
+                    </header>
+                    <div class="posts-image" style="background-image:url(/images/shark.jpg)"></div>
+                    <p>Call me <em>Ishmael</em>. Some years ago-<em>never mind how long precisely</em>-having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen and regulating the circulation.</p>
+
+                </div>
+            
         </div>
     </div>
 </div>
+
+        </div>
+
+        <footer class="footer">
+    <a href="/" class="footer-logo">
+        <img src="/images/logo.png" alt="Learn Enough">
+    </a>
+    <nav>
+        <ul class="footer-nav nav-links">
+            <li><a href="/">Home</a></li>
+<li><a href="/gallery">Gallery</a></li>
+<li class="dropdown">
+    <a class="drop-trigger" href="/blog">Blog</a>
+    <ul class="drop-menu">
+        <li>Recent Posts</li>
+        
+            <li><a href="/2024/04/20/inconsistent-posting.html">Consistency is the hardest part, but then it's essential</a></li>
+        
+            <li><a href="/2023/12/19/drawing-and-art.html">My attempts at art and making an independent blog entry</a></li>
+        
+            <li><a href="/2023/12/10/new-interest-or-new-distraction.html">I remember why I quit electronics the first time</a></li>
+        
+            <li><a href="/2023/12/02/finished-custom-domain.html">The site is set up on my custom domain</a></li>
+        
+            <li><a href="/2023/11/18/the-first-non-tutorial-post.html">Now the blog is finished</a></li>
+        
+    </ul>
+</li>
+<li><a href="/2024/04/20/inconsistent-posting.html">Newest Post</a></li>
+
+        </ul>
+    </nav>
+    <ul class="social-list social-list-footer">
+        <li> 
+    <a href="https://facebook.com/learnenough" class="social-link">
+        <i class="fab fa-facebook"></i>
+    </a>
+</li>
+<li>
+    <a href="https://twitter.com/learnenough" class="social-link">
+        <i class="fab fa-twitter"></i>
+    </a>
+</li>
+<li>
+    <a href="https://github.com/learnenough" class="social-link">
+        <i class="fab fa-github"></i>
+    </a>
+</li>
+
+    </ul>
+    <h3>Learn Enough <span>to Be Dangerous</span></h3>
+</footer>
+
+    </body>
+</html>
+
