@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Put this script in the root of git repo (in this case Codeberg remote)
+# Make sure the file is executable
+
+# Build the site
+bundle exec jekyll build
+
+# Switch to pages branch (or create it if it doesn't exist)
+git worktree add /tmp/pages pages || git worktree add /tmp/pages -b pages origin/pages
+
+# Clear old site files
+rm -rf /tmp/pages/*
+
+# Copy built site into pages branch
+cp -r _site/* /tmp/pages/
+
+# Add a .nojekyll file to disable processing on Codeberg
+touch /tmp/pages/.nojekyll
+
+# Commit and push
+cd /tmp/pages
+git add --all
+git commit -m "Deploy site at $(date)"
+# Recall origin remote is pointing at Codeberg
+git push origin pages
+
+# Cleanup
+cd -
+git worktree remove /tmp/pages
+
